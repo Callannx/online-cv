@@ -58,7 +58,7 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FNDN-01 | Phase 1 | Pending |
+| FNDN-01 | Phase 1 | In progress (tokens defined in 01-01; visual verification in 01-03) |
 | FNDN-02 | Phase 1 | Pending |
 | FNDN-03 | Phase 1 | Pending |
 | SECT-01 | Phase 2 | Pending |
