@@ -1,0 +1,16 @@
+/*
+ * components.css — Component styles: nav, card, button, badge, etc.
+ * Phase 1: Stub only. Defines :focus-visible and nothing else.
+ * Phase 2 will add: .card, .btn, .nav-link, .badge, .skill-bar
+ * Phase 3 will add: .glass-card, hover micro-interactions
+ * RULE: Only var(--*) token references. No raw color/spacing/font values.
+ */
+
+/* Accessible focus indicator using accent color token */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Phase 2+: component classes go below this line */

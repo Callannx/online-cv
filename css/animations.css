@@ -1,0 +1,42 @@
+/*
+ * animations.css — Motion and reveal animations.
+ * Phase 1: js-enabled gate only. Phase 3 will add scroll-triggered reveals.
+ *
+ * PATTERN: All content is visible by default (no JS required).
+ * The .js-enabled class (added by main.js) enables animations.
+ * Without JS: sections render normally, no hidden content.
+ * With JS: [data-animate] elements start hidden and reveal via .visible class.
+ *
+ * RULE: All hide/show declarations MUST be scoped to .js-enabled [data-animate].
+ * Never apply opacity: 0 or display: none outside this gate.
+ */
+
+/* Default state: everything visible (progressive enhancement baseline) */
+[data-animate] {
+  /* No opacity or transform here — content is accessible without JS */
+}
+
+/* With JS confirmed: initial hidden state for animated elements */
+.js-enabled [data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+/* Revealed state: JS adds .visible when element enters viewport (Phase 3) */
+.js-enabled [data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Always respect user's OS motion preference — override all transitions */
+@media (prefers-reduced-motion: reduce) {
+  .js-enabled [data-animate],
+  .js-enabled [data-animate].visible {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
