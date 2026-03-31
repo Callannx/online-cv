@@ -1,0 +1,56 @@
+/*
+ * reset.css — Minimal browser normalization.
+ * Structural rules only. No color/spacing/font values — those live in tokens.css.
+ * Load order: reset.css FIRST, then tokens.css, layout.css, components.css, animations.css
+ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove list styles on ul/ol with explicit role */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Remove default focus styles — will be replaced in components.css */
+:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
