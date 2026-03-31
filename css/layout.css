@@ -1,0 +1,122 @@
+/*
+ * layout.css — Page structure, section spacing, responsive grid, typography scale.
+ * Consumes tokens from tokens.css exclusively. NO raw color/spacing/font values here.
+ * Load order: reset.css → tokens.css → layout.css → components.css → animations.css
+ */
+
+/* === Base page === */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+}
+
+/* === Skip-to-content link (accessibility) === */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  z-index: 100;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-md);
+}
+
+/* === Site header === */
+.site-header {
+  position: sticky;
+  top: 0;
+  padding-block: var(--space-md);
+  padding-inline: var(--space-md);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 10;
+}
+
+.site-nav {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* === Section layout === */
+.section {
+  padding-block: var(--space-xl);
+  padding-inline: var(--space-md);
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* === Responsive grid utility === */
+/* Mobile: single column by default */
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+/* === Typography scale === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+}
+
+/* Fluid type: scales between mobile min and desktop max */
+h1 { font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem); }
+h2 { font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem); }
+h3 { font-size: var(--text-xl); }
+
+p {
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-text-muted);
+  max-width: 65ch;
+}
+
+/* === Footer === */
+.site-footer {
+  padding-block: var(--space-lg);
+  padding-inline: var(--space-md);
+  text-align: center;
+  color: var(--color-text-faint);
+  font-size: var(--text-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+/* === Tablet breakpoint (640px+) === */
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .section {
+    padding-inline: var(--space-lg);
+  }
+
+  .site-header {
+    padding-inline: var(--space-lg);
+  }
+}
+
+/* === Desktop breakpoint (1024px+) === */
+@media (min-width: 1024px) {
+  .section {
+    padding-inline: var(--space-xl);
+  }
+
+  .site-header {
+    padding-inline: var(--space-xl);
+  }
+}
