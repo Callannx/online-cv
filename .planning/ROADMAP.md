@@ -27,7 +27,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   1. User sees the dark background with purple/cyan color palette applied consistently — no hardcoded colors anywhere in CSS
   2. User can load the page on a phone, tablet, and desktop and content never overflows or breaks layout
   3. User can read all page content with JavaScript disabled — no content is hidden behind JS
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — CSS design token system (tokens.css) and browser reset (reset.css)
+- [ ] 01-02-PLAN.md — Responsive layout (layout.css), component stub, animation gate (animations.css), JS entry point (main.js)
+- [ ] 01-03-PLAN.md — HTML semantic skeleton (index.html) wired to all CSS and fonts, self-hosted font download, human verification checkpoint
 
 ### Phase 2: Core Sections
 **Goal**: All five portfolio sections exist with real content and are readable without any visual effects
@@ -69,7 +74,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/? | Not started | - |
+| 1. Foundation | 0/3 | Not started | - |
 | 2. Core Sections | 0/? | Not started | - |
 | 3. Visual Polish | 0/? | Not started | - |
 | 4. Ship | 0/? | Not started | - |
