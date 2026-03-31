@@ -45,6 +45,16 @@ A living proof-of-work: every project on the site is something built *during* th
 - **Content**: V1 is the shell — structure and design right first, project content fills in as learning progresses
 - **Hosting**: GitHub Pages — static files only, no server-side rendering
 
+## Current Milestone: v1.0 Portfolio Launch
+
+**Goal:** Build and ship the complete portfolio site — design system through deployment.
+
+**Target features:**
+- Foundation: design system tokens, page structure, responsive grid
+- Sections: Hero, Projects, Skills, About, Contact
+- Visual polish: glassmorphism cards, scroll animations, micro-interactions
+- Deployment: GitHub Pages, meta tags, favicon, 404 page
+
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
@@ -55,4 +65,4 @@ A living proof-of-work: every project on the site is something built *during* th
 | Dark theme with purple/cyan palette | Matches developer aesthetic, stands out vs minimal white portfolios | — Pending |
 
 ---
-*Last updated: 2026-03-30 after initialization*
+*Last updated: 2026-03-31 after milestone v1.0 started*
