@@ -1,0 +1,17 @@
+body {
+  background-color: aliceblue;
+}
+
+header {
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+nav a {
+  margin: 10px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+}
