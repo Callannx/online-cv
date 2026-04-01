@@ -1,103 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Become a Dev — Portfolio</title>
-  <meta name="description" content="A developer portfolio built in the open — every project is something built during the learning journey." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my Portfolio</h1>
+      <p>
+        This is where I will be creating a portfolio to progress as a Software
+        Engineer
+      </p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <!--
-    Self-hosted variable fonts — no external CDN request.
-    font-display: swap ensures text is visible during font load.
-    font-weight range covers full variable axis for each font.
-  -->
-  <style>
-    @font-face {
-      font-family: 'Inter';
-      src: url('assets/fonts/inter-variable.woff2') format('woff2');
-      font-weight: 100 900;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'Space Grotesk';
-      src: url('assets/fonts/space-grotesk-variable.woff2') format('woff2');
-      font-weight: 300 700;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
-
-  <!--
-    CSS load order is load-bearing — do not reorder.
-    reset.css: browser normalization (no values)
-    tokens.css: ALL design tokens (color, spacing, type, radius)
-    layout.css: page structure, grid, typography — consumes tokens
-    components.css: UI components — consumes tokens
-    animations.css: js-enabled gate and motion — consumes tokens
-  -->
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/tokens.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-</head>
-<body>
-
-  <!-- Skip to main content: visible on focus, hidden otherwise (layout.css .skip-link) -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <header class="site-header">
-    <nav class="site-nav" aria-label="Main navigation">
-      <!-- Phase 2: nav links (Home, Projects, Skills, About, Contact) -->
-    </nav>
-  </header>
-
-  <main id="main-content">
-
-    <!-- Hero: above the fold, no data-animate (already visible on load) -->
-    <section id="hero" class="section section--hero">
-      <!-- Phase 2: h1 with name, role, and one-line pitch -->
-      <!-- Placeholder h1 so heading hierarchy is valid in Phase 1 -->
-      <h1><!-- Phase 2 --></h1>
-    </section>
-
-    <!-- Projects: data-animate = Phase 3 will trigger reveal on scroll -->
-    <section id="projects" class="section" data-animate>
-      <h2>Projects</h2>
-      <!-- Phase 2: card grid of built projects -->
-    </section>
-
-    <!-- Skills: data-animate = Phase 3 scroll reveal -->
-    <section id="skills" class="section" data-animate>
-      <h2>Skills</h2>
-      <!-- Phase 2: skill levels for HTML/CSS, JS, TS, Python/AI -->
-    </section>
-
-    <!-- About: data-animate = Phase 3 scroll reveal -->
-    <section id="about" class="section" data-animate>
-      <h2>About</h2>
-      <!-- Phase 2: background, career direction, currently learning -->
-    </section>
-
-    <!-- Contact: data-animate = Phase 3 scroll reveal -->
-    <section id="contact" class="section" data-animate>
-      <h2>Contact</h2>
-      <!-- Phase 2: links to reach out -->
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <!-- Phase 2: copyright, links -->
-  </footer>
-
-  <!--
-    defer: script executes after HTML is parsed (non-blocking).
-    main.js adds js-enabled class to <html>, activating CSS animation gate.
-  -->
-  <script defer src="js/main.js"></script>
-
-</body>
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+      </section>
+    </main>
+    <footer>Copyright 2026</footer>
+  </body>
 </html>
