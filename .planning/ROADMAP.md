@@ -12,7 +12,7 @@ Build and ship a personal portfolio site from zero: starting with a design syste
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Design system tokens, semantic page structure, responsive grid
+- [x] **Phase 1: Foundation** - Design system tokens, semantic page structure, responsive grid (completed 2026-04-01)
 - [ ] **Phase 2: Core Sections** - All five content sections built and readable
 - [ ] **Phase 3: Visual Polish** - Glassmorphism cards, scroll animations, micro-interactions
 - [ ] **Phase 4: Ship** - GitHub Pages deployment, meta tags, favicon, custom 404
@@ -74,7 +74,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/3 | In progress | - |
+| 1. Foundation | 3/3 | Complete   | 2026-04-01 |
 | 2. Core Sections | 0/? | Not started | - |
 | 3. Visual Polish | 0/? | Not started | - |
 | 4. Ship | 0/? | Not started | - |

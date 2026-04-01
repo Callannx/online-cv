@@ -7,9 +7,9 @@
 
 ### Foundation
 
-- [ ] **FNDN-01**: User sees a dark-themed page with purple/cyan color palette applied consistently via CSS custom properties
-- [ ] **FNDN-02**: User sees the page render correctly on mobile, tablet, and desktop viewports
-- [ ] **FNDN-03**: Page content is readable and accessible without JavaScript (progressive enhancement)
+- [x] **FNDN-01**: User sees a dark-themed page with purple/cyan color palette applied consistently via CSS custom properties
+- [x] **FNDN-02**: User sees the page render correctly on mobile, tablet, and desktop viewports
+- [x] **FNDN-03**: Page content is readable and accessible without JavaScript (progressive enhancement)
 
 ### Sections
 
@@ -59,8 +59,8 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | FNDN-01 | Phase 1 | In progress (tokens defined in 01-01; visual verification in 01-03) |
-| FNDN-02 | Phase 1 | Pending |
-| FNDN-03 | Phase 1 | Pending |
+| FNDN-02 | Phase 1 | Complete |
+| FNDN-03 | Phase 1 | Complete |
 | SECT-01 | Phase 2 | Pending |
 | SECT-02 | Phase 2 | Pending |
 | SECT-03 | Phase 2 | Pending |
