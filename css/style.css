@@ -5,10 +5,13 @@ body {
 header {
   background-color: aquamarine;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-nav a {
-  margin: 10px;
+nav {
+  display: flex;
+  gap: 10px;
 }
 
 footer {
