@@ -191,6 +191,18 @@ footer {
   background-color: var(--colour-primary-hover);
 }
 
+.card-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--colour-primary-accent);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card-link:hover {
+  color: var(--colour-primary-hover);
+}
+
 #hero {
   min-height: calc(100vh - 65px);
   display: flex;
