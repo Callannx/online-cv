@@ -203,6 +203,10 @@ footer {
   color: var(--colour-primary-hover);
 }
 
+.highlight {
+  color: var(--colour-primary-accent);
+}
+
 #hero {
   min-height: calc(100vh - 65px);
   display: flex;
